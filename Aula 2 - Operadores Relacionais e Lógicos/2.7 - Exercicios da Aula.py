@@ -38,10 +38,28 @@ print("---------- Programa 1 ----------")
 
 idade = int(input("Qual a sua idade?"))
 
-if idade > 16:
+if idade >= 16:
     print("Pode Votar")
 if idade < 16:
-    print("Não pode pvtar")
+    print("Não pode votar")
 
 print("---------- Programa 2 --------")
-print("---------- Programa 1 ----------")
+
+usuario = input("Usuário")
+senha = input("Senha")
+
+if usuario == "admin" and senha == "1234":
+    print("Acesso permitido")
+else:
+    print("Acesso negado")
+
+print("---------- Programa 3 ----------")
+
+numero = int(input("Numero"))
+
+if numero > 0:
+    print("Positivo")
+elif numero < 0:
+    print("Negativo")
+else:
+    print("Zero")
