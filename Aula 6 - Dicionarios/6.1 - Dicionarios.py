@@ -41,7 +41,7 @@ for chave, valor in usuario.itens():
 # Métodos importantes
 usuario.Keys() # Todas as Chaves
 usuario.values() #Todos os Valores
-usuario.itens() pares (chave, valor)
+usuario.itens() #pares (chave, valor)
 
 # ------ Exemplo pratico -------
 
