@@ -1,3 +1,4 @@
+from time import sleep
 class Veiculo:
     def __init__(self, marca, modelo):
         self.marca = marca
@@ -9,23 +10,29 @@ class Veiculo:
         print("O Veiculo foi abastecido")
 
 class Carro(Veiculo):
+    def __init__(self, marca, modelo, portas):
+        super().__init__(marca, modelo)
+        self.portas = portas 
 
     def abrir_porta_malas(self):
-        print("Porta malas do carro aberto!")
+        print(f"Porta malas do carro de {self.portas} aberto!")
 
 
 class Caminhao(Veiculo):
+    def __init__(self, marca, modelo, eixos):
+        super().__init__(marca, modelo)
+        self.eixos = eixos
 
-    def carregar_cacamba()
-        print("Carregando a caçamba com mercadorias")
+    def carregar_cacamba(self):
+        print(f"Carregando a caçamba do caminhão de {self.eixos} com mercadorias")
         sleep(4)
         print("Carregado.")
 
 # ----- Testando ------
 
 # --- criando objetos
-meu_carro = Carro("Toyota", "Corolla")
-meu_caminhao = Caminhao("Volvo", "FH 540")
+meu_carro = Carro("Toyota", "Corolla", 4)
+meu_caminhao = Caminhao("Volvo", "FH 540", 6)
 
 # --- Testando a Herança
 print(f"Carro: {meu_carro.marca} {meu_carro.modelo} | Combustível: {meu_carro.combustivel}")
